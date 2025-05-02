@@ -4,7 +4,7 @@ import { useWorkspaceId } from "@/hooks/use-workspace-id";
 const ThreadsPage = () => {
 	const workspaceId = useWorkspaceId();
 
-	return <div>ThreadsPage {workspaceId}</div>;
+	return <div>WorkspaceId: {workspaceId}</div>;
 };
 
 export default ThreadsPage;
