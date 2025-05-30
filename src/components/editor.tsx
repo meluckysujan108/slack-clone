@@ -74,9 +74,15 @@ const Editor = ({
 			placeholder: placeholderRef.current,
 			modules: {
 				toolbar: [
-					["bold", "italic", "strike"],
-					["link"],
-					[{ list: "ordered" }, { list: ["bullet"] }],
+					["bold", "italic", "underline", "strike"],
+					[{ color: [] }, { background: [] }],
+					[{ script: "sub" }, { script: "super" }],
+					[{ list: "ordered" }, { list: "bullet" }],
+					[{ indent: "-1" }, { indent: "+1" }],
+					[{ align: [] }],
+					["blockquote", "code-block"],
+					["link", "image"],
+					["clean"],
 				],
 				keyboard: {
 					bindings: {
